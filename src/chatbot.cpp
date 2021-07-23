@@ -80,7 +80,6 @@ ChatBot::ChatBot(ChatBot &&source)
     _rootNode = source._rootNode;
     _image = source._image;
 
-    delete source._image;
     source._image = NULL;
     source._rootNode = nullptr;
     source._chatLogic = nullptr;
